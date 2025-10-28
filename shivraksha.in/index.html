@@ -26,8 +26,7 @@
 
         html,
         body {
-            background: #000;
-            height: 100%
+            max-width: 100%
             overflow-x: hidden;
             margin: 0;
             padding: 0;
@@ -41,29 +40,7 @@
         body {
             position: relative
         }
-        #backing {
-    margin: 0;
-    padding: 0;
-    display: block;
-    position: fixed;   /* ensures it sticks to the top */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-  }
-
-  svg {
-    display: block;
-    width: 100%;
-    height: 100vh;
-  }
-
-  /* Fix for mobile browsers with dynamic address bars */
-  @supports (height: 100dvh) {
-    #backing, svg {
-      height: 100dvh; /* dynamic vh – adjusts with browser UI */
-    }
-  }
+       
     </style>
 </head>
 
@@ -322,8 +299,8 @@
                 <a xlink:href="https://maps.app.goo.gl/y4T2ShX5pWWNY21W9"><rect x="250" y="1020" width="760" height="80" opacity="0.0" /><title>Click to Open in Google Maps</title></a>
             </svg>
         </figure> -->
-                    <!--<figure id="backing" style="margin:0; padding:0;">
-                        <svg version="1.1" width="100%" height="100vh" xmlns="http://www.w3.org/2000/svg"
+                    <<figure id="backing" style="margin:0; padding:0;">
+                        <svg version="1.1" width="100%" height="75vh" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 1564"
                             preserveAspectRatio="xMidYMid meet">
                             <image xlink:href="img/ShivRaksha3.png" width="100%" height="100%"
@@ -333,31 +310,8 @@
                                 <title>Click to Open in Google Maps</title>
                             </a>
                         </svg>
-                    </figure>-->
-                    <figure id="backing">
-  <svg
-    version="1.1"
-    xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
-    viewBox="0 0 1280 1564"
-    preserveAspectRatio="xMidYMid slice"
-  >
-    <!-- Background image -->
-    <image
-      xlink:href="img/ShivRaksha3.png"
-      width="100%"
-      height="100%"
-      preserveAspectRatio="xMidYMid slice"
-    />
-
-    <!-- Clickable link area -->
-    <a xlink:href="https://maps.app.goo.gl/28BnoGXkGjTuQEhU7" target="_blank">
-      <rect x="250" y="1400" width="760" height="80" opacity="0" />
-      <title>Click to Open in Google Maps</title>
-    </a>
-  </svg>
-</figure>
-                </div>
+                    </figure>
+               </div>
 
             </div>
 
@@ -385,5 +339,6 @@
 
 
 </html>
+
 
 
